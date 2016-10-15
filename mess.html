@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>501</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<style type="text/css">
+	h1 {
+		text-align: center;
+		font-size: 40px
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+	#player1, #player2 {
+		float:left; width:50%;
+	}
+	 /* * { border:1px solid red;} */
+	#start {
+		display: block;
+		margin:0 auto;
+	}
+	body {
+		background-color: black;
+		color: white;
+	}
+
+	ul li {
+		color: red;
+		font-size: 35px;
+	}
+
+	.btn-success {
+		margin-left: 35px;
+	}
+
+	.btn-danger {
+		margin-left: 30px;
+	}
+	#start {
+		color: red;
+	}
+	#p2score {
+		color: red;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1> 501 </h1>
+		
+		<div>
+			<div id="player1">
+				<h2>Player 1</h2>  <!-- Set Div As your requirement -->
+				<button id="start">Player 1 <br>Enter score</button>
+				<br>
+				<br>
+				<ul></ul>
+			</div>
+			<div id="player2">
+				<h2>Player 2</h2>  <!-- Set Div As your requirement -->
+				<button id="p2score">Player 2<br>Enter score</button>
+				<ul></ul>
+			</div>	
+			</div>
+		</div>
+
+
+		<button type ="button" class="btn btn-info btn-lg">Checkout Calculator</button> <br> <br>
+		<button type ="button" class="btn btn-danger btn-lg">Finish game</button><br> <br>
+		<button type ="button" class="btn btn-success btn-lg">Play again</button> 
+
+		
+		
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+	<!-- Latest compiled and minified JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+	var currentPlayer = "player1"
+	var remainScore = 501;
+
+
+    $('#start').on("click", function(){
+	 var currentScore = prompt("Please enter your score");
+   	 remainScore -= currentScore;
+
+	$("#" +  currentPlayer + " ul").append( $("<li>You Scored : " + currentScore + " <br> Remaining : " + remainScore + "</li>") ) ;
+
+
+
+
+});
+
+	/*var currentPlayer = "player2";
+	var remainScore = 501; // inital score
+	var currentPlayer = "player1"
+
+	$("#start").on("click", function() {
+
+		
+ 		currentPlayer = ( currentPlayer === "player1"); ? "player2" : "player1";
+		
+		
+		
+
+		
+
+	})*/
+	
+
+	$('.btn-success').click(function() {
+    location.reload();
+});
+
+	$(function(){
+    $('.btn-danger').click(function(){
+        window.location='index.html'
+    });
+});
+
+	$(function(){
+    $('.btn-info').click(function(){
+        window.location='finishes.html'
+    });
+});
+
+
+
+	</script>
+</body>
+</html>
