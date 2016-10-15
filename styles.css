@@ -1,0 +1,98 @@
+body {
+    background-color: red;    
+}
+
+body.homepage {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 18px;
+    background-image: url(76534590_xxl.jpg);
+    background-size: 25%;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: green;
+    padding-top: 24px;
+}
+
+.headerContent {
+    width: 1024px;
+    height: auto;
+    margin-right: 0 auto;
+    background:;
+}
+
+.headerContent a img {
+    width: 
+    height:
+    margin:
+    display:
+}
+
+nav {
+    height: 60px;
+    background: white;
+    margin-top: 20px;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 25px;
+    
+}
+
+nav ul li a:hover {
+    color:
+}
+
+.item {
+    vertical-align: center;
+}
+
+.setimg {
+    float: right;
+}
+
+#set {
+    font-size: 35px;
+}
+
+.relegion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.jumbotron {
+    width: 400px;
+    height: 400px;
+}
+.beerimg {
+    float: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+
